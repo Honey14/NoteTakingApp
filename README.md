@@ -16,17 +16,18 @@ This screen must contain an action (either a button or an action bar menu option
 
 2. Create Note Screen
 
-Show the following text fields along with a button to ìSaveî the note:
+Show the following text fields along with a button to ‚ÄúSave‚Äù the note:
 Title: Free text, max 100 characters
 Content: Free text, no limit
 The only validation on these fields is that they must not be blank. 
 The user must be able to enter values for both these fields. 
-Hitting the ìSaveî button should save the note and take the user to Note Detail Screen.
+Hitting the ‚ÄúSave‚Äù button should save the note and take the user to Note Detail Screen.
 
+![Add notes screen](screenshots/addnote.JPG)
 
 3. Note Detail Screen
 
-Show the note title and content, along with the timestamp when the note was created (ex: í13 January 2018, 5:30 PMí).
+Show the note title and content, along with the timestamp when the note was created (ex: ‚Äô13 January 2018, 5:30 PM‚Äô).
 This screen does not have any interaction and just displays static content.
 If the user has arrived on this screen after immediately creating a note, pressing back on this screen should take them to List of notes screen.
 
