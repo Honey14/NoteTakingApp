@@ -25,7 +25,7 @@ The user must be able to enter values for both these fields.
 Hitting the “Save” button should save the note and take the user to Note Detail Screen.
 
 
-<img src="screenshots/addnote.jpg" height="400">
+<p align="center"><img src="screenshots/addnote.jpg" height="400"></p>
 
 3. Note Detail Screen
 
@@ -33,6 +33,6 @@ Show the note title and content, along with the timestamp when the note was crea
 This screen does not have any interaction and just displays static content.
 If the user has arrived on this screen after immediately creating a note, pressing back on this screen should take them to List of notes screen.
 
-<img src="screenshots/details.jpg" height="400">
+<p align="center"><img src="screenshots/details.jpg" height="400"></p>
 
 
