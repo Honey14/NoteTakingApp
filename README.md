@@ -23,7 +23,7 @@ The only validation on these fields is that they must not be blank.
 The user must be able to enter values for both these fields. 
 Hitting the “Save” button should save the note and take the user to Note Detail Screen.
 
-![Add notes screen](screenshots/addnote.JPG)
+![Add notes screen](screenshots/addnote.jpg)
 
 3. Note Detail Screen
 
