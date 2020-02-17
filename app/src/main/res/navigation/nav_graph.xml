@@ -9,12 +9,10 @@
         android:id="@+id/listNoteFragment"
         android:name="honeysonwani.notetakingapp.view.ListNoteFragment"
         android:label="Note Taking App"
-        tools:layout="@layout/fragment_list_note"
-        >
+        tools:layout="@layout/fragment_list_note">
         <action
             android:id="@+id/action_listNoteFragment_to_addNoteFragment"
-            app:destination="@id/addNoteFragment"
-             />
+            app:destination="@id/addNoteFragment" />
         <action
             android:id="@+id/action_listNoteFragment_to_noteDetailFragment"
             app:destination="@id/noteDetailFragment"
@@ -36,9 +34,10 @@
         android:id="@+id/addNoteFragment"
         android:name="honeysonwani.notetakingapp.view.AddNoteFragment"
         android:label="Add Note"
-        tools:layout="@layout/fragment_add_note" >
+        tools:layout="@layout/fragment_add_note">
         <action
             android:id="@+id/action_addNoteFragment_to_noteDetailFragment"
-            app:destination="@id/noteDetailFragment" />
+            app:destination="@id/noteDetailFragment"
+            app:popUpTo="@+id/listNoteFragment" />
     </fragment>
 </navigation>

@@ -15,8 +15,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/title"
-            android:singleLine="true"
             android:maxLength="100"
+            android:singleLine="true"
             android:textSize="18sp" />
 
         <EditText
@@ -38,7 +38,8 @@
             android:layout_marginTop="6dp"
             android:background="@color/colorPrimary"
             android:text="@string/save"
-            android:textColor="@android:color/white" />
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
 
     </LinearLayout>
 

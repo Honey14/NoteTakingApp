@@ -9,7 +9,6 @@ import honeysonwani.notetakingapp.view.interfaces.AddNoteView
 import java.text.SimpleDateFormat
 import java.util.*
 
-
 class AddNotePresenterImpl : AddNotePresenter {
     override fun getCurrentTimeStamp() : String {
         val currentTime = SimpleDateFormat("dd MMMM yyyy, h:mm a", Locale.getDefault()).format(Date())

@@ -19,12 +19,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:text="@string/note_title"
-            android:textStyle="bold"
             android:ellipsize="end"
             android:maxLines="1"
+            android:text="@string/note_title"
             android:textColor="@color/colorPrimary"
-            android:textSize="18sp" />
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/text_details"
@@ -34,9 +34,9 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="2dp"
             android:layout_marginEnd="8dp"
-            android:text="@string/note_detail"
             android:ellipsize="end"
             android:maxLines="1"
+            android:text="@string/note_detail"
             android:textColor="@color/colorPrimary"
             android:textSize="14sp" />
     </RelativeLayout>

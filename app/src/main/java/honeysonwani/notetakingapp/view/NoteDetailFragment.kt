@@ -19,7 +19,7 @@ class NoteDetailFragment : Fragment(R.layout.fragment_note_detail) {
         val noteClicked = arguments?.getParcelable<Note>("note_clicked")
         text_note_title.text = noteClicked?.note_title
         text_note_detail.text = noteClicked?.note_detail
-        note_time.text = noteClicked?.time_stamp
+        val timestamp = noteClicked?.time_stamp
+        note_time.text = "Written on: $timestamp"
     }
-
 }

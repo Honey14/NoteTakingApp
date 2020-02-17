@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">NoteTakingApp</string>
+    <string name="app_name">Honey\'s Notes</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -10,4 +10,8 @@
     <string name="_12_12_2019_12_34_pm">12/12/2019 12.34 pm</string>
     <string name="write_your_note_here">Write your note here</string>
     <string name="save">Save</string>
+    <string name="no_notes_found">No Notes Found.</string>
+    <string name="note_details">Note Details</string>
+    <string name="notes_name">Notes</string> <!--    option Honey\'s Notes-->
+    <string name="add_note">Add Note</string>
 </resources>

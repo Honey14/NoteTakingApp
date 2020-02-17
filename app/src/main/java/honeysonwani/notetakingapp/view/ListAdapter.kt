@@ -1,5 +1,6 @@
 package honeysonwani.notetakingapp.view
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
@@ -22,9 +23,14 @@ class ListAdapter(
         return listOfNotes.size
     }
 
+    @SuppressLint("DefaultLocale")
     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
-        holder.textHeadline.text = listOfNotes[position].note_title
-        holder.textDetails.text = listOfNotes[position].note_detail
+        val noteTitleString = listOfNotes[position].note_title
+        val noteTitle = noteTitleString.substring(0,1).toUpperCase() + noteTitleString.substring(1).toLowerCase()
+        val noteDetailString = listOfNotes[position].note_detail
+        val noteDetail = noteDetailString.substring(0,1).toUpperCase() + noteDetailString.substring(1).toLowerCase()
+        holder.textHeadline.text = noteTitle
+        holder.textDetails.text = noteDetail
         holder.cardHead.setOnClickListener {
             val bundle = bundleOf("note_clicked" to listOfNotes[position])
             view.findNavController().navigate(R.id.action_listNoteFragment_to_noteDetailFragment,bundle)
