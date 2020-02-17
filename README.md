@@ -13,7 +13,7 @@ Android Studio
 This is the home screen. When it launches, list all the notes the user has created in reverse chronological order (latest created note first).
 This screen must contain an action (either a button or an action bar menu option) that opens screen 2. Tapping on a note should open Note Detail Screen.
 
-<img src="screenshots/list.jpg" height="400">
+<div style="text-align:center"><img src="screenshots/list.jpg" height="400"></div>
 
 2. Create Note Screen
 
