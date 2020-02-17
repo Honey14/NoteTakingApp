@@ -24,6 +24,7 @@ The user must be able to enter values for both these fields.
 Hitting the “Save” button should save the note and take the user to Note Detail Screen.
 
 ![Add notes screen](screenshots/addnote.jpg =100x20)
+<img src="screenshots/addnote.jpg" height="200">
 
 3. Note Detail Screen
 
