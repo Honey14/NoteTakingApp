@@ -1,8 +1,9 @@
 package honeysonwani.notetakingapp.view.interfaces
 
-import android.view.View
+import honeysonwani.notetakingapp.model.Note
 
 interface NotesListView {
-    fun setRecyclerView(view: View)
+    fun setRecyclerView(listOfNotes : ArrayList<Note>)
+    fun setTextForEmptyList()
 
 }
