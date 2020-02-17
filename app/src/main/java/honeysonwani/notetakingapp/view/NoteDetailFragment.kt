@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 
 import honeysonwani.notetakingapp.R
+import honeysonwani.notetakingapp.model.Note
 
 /**
  * A simple [Fragment] subclass.
@@ -16,6 +17,8 @@ class NoteDetailFragment : Fragment(R.layout.fragment_note_detail) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+
     }
 
 }

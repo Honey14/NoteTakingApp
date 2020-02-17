@@ -1,4 +1,4 @@
-package honeysonwani.notetakingapp.view.`interface`
+package honeysonwani.notetakingapp.view.interfaces
 
 import android.view.View
 

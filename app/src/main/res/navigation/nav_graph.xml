@@ -35,5 +35,9 @@
         android:id="@+id/addNoteFragment"
         android:name="honeysonwani.notetakingapp.view.AddNoteFragment"
         android:label="Add Note"
-        tools:layout="@layout/fragment_add_note" />
+        tools:layout="@layout/fragment_add_note" >
+        <action
+            android:id="@+id/action_addNoteFragment_to_noteDetailFragment"
+            app:destination="@id/noteDetailFragment" />
+    </fragment>
 </navigation>

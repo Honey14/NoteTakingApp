@@ -8,7 +8,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 
 import honeysonwani.notetakingapp.R
-import honeysonwani.notetakingapp.view.`interface`.NotesListView
+import honeysonwani.notetakingapp.view.interfaces.NotesListView
 import kotlinx.android.synthetic.main.fragment_list_note.*
 
 /**
