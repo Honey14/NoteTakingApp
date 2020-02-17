@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.core.os.bundleOf
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import honeysonwani.notetakingapp.R
@@ -25,7 +26,8 @@ class ListAdapter(
         holder.textHeadline.text = listOfNotes[position].note_title
         holder.textDetails.text = listOfNotes[position].note_detail
         holder.cardHead.setOnClickListener {
-            view.findNavController().navigate(R.id.action_listNoteFragment_to_noteDetailFragment)
+            val bundle = bundleOf("note_clicked" to listOfNotes[position])
+            view.findNavController().navigate(R.id.action_listNoteFragment_to_noteDetailFragment,bundle)
         }
     }
 

@@ -32,9 +32,13 @@ class AddNoteFragment : Fragment(R.layout.fragment_add_note), AddNoteView {
             val noteText = note_text.text.toString()
             if (addNotePresenterImpl.checkFields(title, noteText)) {
                 addNotePresenterImpl.saveNote(title, noteText)
-//                val body = Note(0,title ,noteText)
-//                val bundle = bundleOf("note_body" to body)
-                findNavController().navigate(R.id.action_addNoteFragment_to_noteDetailFragment)
+                val currentTimeStamp = addNotePresenterImpl.getCurrentTimeStamp()
+                val body = Note(0, title, noteText, currentTimeStamp)
+                val bundle = bundleOf("note_clicked" to body)
+                findNavController().navigate(
+                    R.id.action_addNoteFragment_to_noteDetailFragment,
+                    bundle
+                )
             }
         }
     }

@@ -12,6 +12,8 @@ import honeysonwani.notetakingapp.model.Note
 import honeysonwani.notetakingapp.presenter.classes.NotesListPresenterImpl
 import honeysonwani.notetakingapp.view.interfaces.NotesListView
 import kotlinx.android.synthetic.main.fragment_list_note.*
+import java.util.*
+import kotlin.collections.ArrayList
 
 /**
  * A simple [Fragment] subclass.
@@ -24,6 +26,7 @@ class ListNoteFragment : Fragment(R.layout.fragment_list_note), NotesListView {
 
     override fun setRecyclerView(listOfNotes: ArrayList<Note>) {
         empty_notes.visibility = View.GONE
+        listOfNotes.reverse()
         recyclerView.setHasFixedSize(true)
         recyclerView.layoutManager =
             LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)

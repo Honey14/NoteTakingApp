@@ -14,10 +14,7 @@
         <action
             android:id="@+id/action_listNoteFragment_to_addNoteFragment"
             app:destination="@id/addNoteFragment"
-            app:enterAnim="@anim/nav_default_enter_anim"
-            app:exitAnim="@anim/nav_default_exit_anim"
-            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
-            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+             />
         <action
             android:id="@+id/action_listNoteFragment_to_noteDetailFragment"
             app:destination="@id/noteDetailFragment"
@@ -30,6 +27,10 @@
         android:id="@+id/noteDetailFragment"
         android:name="honeysonwani.notetakingapp.view.NoteDetailFragment"
         android:label="Note Details"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim"
+        app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+        app:popExitAnim="@anim/nav_default_pop_exit_anim"
         tools:layout="@layout/fragment_note_detail" />
     <fragment
         android:id="@+id/addNoteFragment"
